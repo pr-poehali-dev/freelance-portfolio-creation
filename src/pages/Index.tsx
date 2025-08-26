@@ -46,6 +46,21 @@ export default function Index() {
       title: "Рекламный баннер",
       category: "Баннер",
       image: "/img/52d0cdb1-d33f-40a4-8312-790040c3bf1f.jpg"
+    },
+    {
+      title: "Веб-дизайн интернет-магазина",
+      category: "Веб-дизайн",
+      image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg"
+    },
+    {
+      title: "Фирменный стиль",
+      category: "Брендинг",
+      image: "/img/73209857-d7d0-41b0-8ea1-ceea54845abb.jpg"
+    },
+    {
+      title: "Авторская иллюстрация",
+      category: "Иллюстрация",
+      image: "/img/7a40dfd5-d627-4618-975d-c43f6da101ac.jpg"
     }
   ];
 
