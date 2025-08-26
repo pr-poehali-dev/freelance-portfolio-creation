@@ -40,7 +40,7 @@ export default function Index() {
     {
       title: "Логотип TechStart",
       category: "Логотип",
-      image: "/img/d3a1f6a5-92ee-491f-8d97-0516ec781953.jpg"
+      image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg"
     },
     {
       title: "Рекламный баннер",
@@ -75,6 +75,30 @@ export default function Index() {
       name: "Михаил Петров",
       role: "Маркетолог",
       text: "Потрясающие баннеры! Конверсия выросла на 40% после обновления креативов.",
+      rating: 5
+    },
+    {
+      name: "Елена Васильева",
+      role: "Директор агентства",
+      text: "Профессиональный подход к созданию фирменного стиля. Клиенты в восторге от нового логотипа!",
+      rating: 5
+    },
+    {
+      name: "Дмитрий Козлов",
+      role: "IT-предприниматель",
+      text: "Быстро и качественно настроил промпты для ChatGPT. Теперь наша служба поддержки работает эффективнее.",
+      rating: 5
+    },
+    {
+      name: "Ольга Смирнова",
+      role: "Дизайнер",
+      text: "Юра помог с иллюстрациями для нашего проекта. Творческий подход и внимание к деталям!",
+      rating: 5
+    },
+    {
+      name: "Максим Белов",
+      role: "Владелец интернет-магазина",
+      text: "Отличные баннеры для рекламы! Продажи выросли, а стоимость клика снизилась.",
       rating: 5
     }
   ];
@@ -191,21 +215,21 @@ export default function Index() {
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h3 className="text-4xl font-bold font-heading text-center mb-16">Отзывы</h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.map((review, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex mb-4">
+                <CardContent className="p-6">
+                  <div className="flex mb-3">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-current" />
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-lg mb-6 font-body italic">"{review.text}"</p>
+                  <p className="text-base mb-4 font-body italic">"{review.text}"</p>
                   <div>
-                    <p className="font-semibold font-heading">{review.name}</p>
-                    <p className="text-muted-foreground font-body">{review.role}</p>
+                    <p className="font-semibold font-heading text-sm">{review.name}</p>
+                    <p className="text-muted-foreground font-body text-xs">{review.role}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -233,14 +257,20 @@ export default function Index() {
           </div>
           <div className="mt-12 flex justify-center space-x-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="Github" size={24} />
+              <Icon name="MessageCircle" size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="Linkedin" size={24} />
-            </a>
+            <span className="text-sm text-muted-foreground">ВК</span>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               <Icon name="Instagram" size={24} />
             </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Icon name="Users" size={24} />
+            </a>
+            <span className="text-sm text-muted-foreground">ОК</span>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Icon name="AtSign" size={24} />
+            </a>
+            <span className="text-sm text-muted-foreground">Max</span>
           </div>
         </div>
       </section>
