@@ -67,13 +67,13 @@ export default function Index() {
   const reviews = [
     {
       name: "@aniram_13mir",
-      role: "Telegram",
+      role: "Клиент",
       text: "Марина создала отличные промпты для нашего ИИ-ассистента. Качество ответов улучшилось в разы!",
       rating: 5
     },
     {
       name: "@Marusja_nik67",
-      role: "Telegram",
+      role: "Заказчик",
       text: "Профессиональный подход к созданию контента. Тексты получились живыми и продающими!",
       rating: 5
     },
@@ -224,7 +224,7 @@ export default function Index() {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 px-4">
+      <section id="reviews" className="py-20 px-4 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30">
         <div className="container mx-auto max-w-6xl">
           <h3 className="text-4xl font-bold font-heading text-center mb-16">Отзывы</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
