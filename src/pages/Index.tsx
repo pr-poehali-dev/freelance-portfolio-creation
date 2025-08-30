@@ -123,16 +123,22 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="py-20 px-4 animate-fade-in">
-        <div className="container mx-auto text-center max-w-4xl">
-          <h2 className="text-5xl md:text-7xl font-bold font-heading text-foreground mb-6 animate-slide-up">
+      <section 
+        id="home" 
+        className="py-20 px-4 animate-fade-in min-h-screen flex items-center relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/38b8474d-e465-4d3a-b595-15ff2699d691.jpg')`
+        }}
+      >
+        <div className="container mx-auto text-center max-w-4xl relative z-10">
+          <h2 className="text-5xl md:text-7xl font-bold font-heading text-white mb-6 animate-slide-up drop-shadow-lg">
             Фрилансер
-            <span className="block text-primary">Дизайнер</span>
+            <span className="block text-blue-300">Дизайнер</span>
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 font-body max-w-2xl mx-auto animate-slide-up" style={{animationDelay: '0.2s'}}>
+          <p className="text-xl text-gray-200 mb-8 font-body max-w-2xl mx-auto animate-slide-up drop-shadow" style={{animationDelay: '0.2s'}}>
             Промптинженеринг • Логотипы • Баннеры • Иллюстрации • Дизайн
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 animate-scale-in" style={{animationDelay: '0.4s'}}>
+          <Button size="lg" className="text-lg px-8 py-6 animate-scale-in bg-blue-600 hover:bg-blue-700 border-0" style={{animationDelay: '0.4s'}}>
             Смотреть работы
             <Icon name="ArrowRight" size={20} className="ml-2" />
           </Button>
