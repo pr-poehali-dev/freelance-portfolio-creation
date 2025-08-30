@@ -283,13 +283,13 @@ export default function Index() {
               <span className="text-sm text-muted-foreground">@Marusja_nik67</span>
             </div>
             <div className="flex flex-col items-center">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+              <a href="https://vk.com/feed" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors mb-2">
                 <Icon name="MessageCircle" size={24} />
               </a>
               <span className="text-sm text-muted-foreground">ВК</span>
             </div>
             <div className="flex flex-col items-center">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+              <a href="https://ok.ru/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors mb-2">
                 <Icon name="Users" size={24} />
               </a>
               <span className="text-sm text-muted-foreground">ОК</span>
