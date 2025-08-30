@@ -192,7 +192,7 @@ export default function Index() {
             <div className="relative">
               <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/path/to/your/avatar.jpg" 
+                  src="https://cdn.poehali.dev/files/e3537739-252d-4395-b80a-9bd963fff364.jpg" 
                   alt="Юра - Фрилансер Дизайнер" 
                   className="w-full h-full object-cover rounded-2xl"
                 />
