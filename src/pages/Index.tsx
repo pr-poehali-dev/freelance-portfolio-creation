@@ -190,8 +190,12 @@ export default function Index() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center">
-                <Icon name="User" size={120} className="text-primary/30" />
+              <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/path/to/your/avatar.jpg" 
+                  alt="Юра - Фрилансер Дизайнер" 
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
             </div>
           </div>
