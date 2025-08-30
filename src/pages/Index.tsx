@@ -151,9 +151,9 @@ export default function Index() {
             <h1 className="text-2xl font-bold font-heading text-primary">Portfolio</h1>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
+              <a href="#about" className="text-foreground hover:text-primary transition-colors">О себе</a>
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Портфолио</a>
               <a href="#gallery" className="text-foreground hover:text-primary transition-colors">Галерея</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">О себе</a>
               <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
               <a href="#reviews" className="text-foreground hover:text-primary transition-colors">Отзывы</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
@@ -185,8 +185,41 @@ export default function Index() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-4xl font-bold font-heading mb-6">О себе</h3>
+              <p className="text-lg text-muted-foreground mb-6 font-body leading-relaxed">
+                Привет! Меня зовут Марина Лактионова, я фрилансер с опытом в области промптинженеринга, дизайна, написании текстов. 
+                Специализируюсь на создании уникальных визуальных решений и работе с ИИ-системами.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 font-body leading-relaxed">
+                Мой подход — сочетание креативности и технических знаний для достижения максимального результата для каждого клиента.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Badge variant="outline">AI/ML</Badge>
+                <Badge variant="outline">Графический дизайн</Badge>
+                <Badge variant="outline">Брендинг</Badge>
+                <Badge variant="outline">Промптинженеринг</Badge>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/e3537739-252d-4395-b80a-9bd963fff364.jpg" 
+                  alt="Марина Лактионова - Фрилансер Дизайнер" 
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-4 bg-muted/30">
+      <section id="portfolio" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <h3 className="text-4xl font-bold font-heading text-center mb-16">Портфолио</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -233,39 +266,6 @@ export default function Index() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-4xl font-bold font-heading mb-6">О себе</h3>
-              <p className="text-lg text-muted-foreground mb-6 font-body leading-relaxed">
-                Привет! Меня зовут Марина Лактионова, я фрилансер с опытом в области промптинженеринга, дизайна, написании текстов. 
-                Специализируюсь на создании уникальных визуальных решений и работе с ИИ-системами.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8 font-body leading-relaxed">
-                Мой подход — сочетание креативности и технических знаний для достижения максимального результата для каждого клиента.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Badge variant="outline">AI/ML</Badge>
-                <Badge variant="outline">Графический дизайн</Badge>
-                <Badge variant="outline">Брендинг</Badge>
-                <Badge variant="outline">Промптинженеринг</Badge>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://cdn.poehali.dev/files/e3537739-252d-4395-b80a-9bd963fff364.jpg" 
-                  alt="Марина Лактионова - Фрилансер Дизайнер" 
-                  className="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
