@@ -256,31 +256,32 @@ export default function Index() {
             Готов обсудить ваш проект и воплотить ваши идеи в жизнь
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <Button size="lg" className="text-lg px-8 py-6">
-              <Icon name="Mail" size={20} className="mr-2" />
-              Написать письмо
+            <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="https://t.me/aniram_13mir" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" size={20} className="mr-2" />
+                @aniram_13mir
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              Telegram
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="https://t.me/Marusja_nik67" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" size={20} className="mr-2" />
+                @Marusja_nik67
+              </a>
             </Button>
           </div>
-          <div className="mt-12 flex justify-center space-x-6">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="MessageCircle" size={24} />
-            </a>
-            <span className="text-sm text-muted-foreground">ВК</span>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="Instagram" size={24} />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="Users" size={24} />
-            </a>
-            <span className="text-sm text-muted-foreground">ОК</span>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Icon name="AtSign" size={24} />
-            </a>
-            <span className="text-sm text-muted-foreground">Max</span>
+          <div className="mt-12 flex justify-center items-center space-x-8">
+            <div className="flex flex-col items-center">
+              <a href="https://t.me/aniram_13mir" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+                <Icon name="MessageCircle" size={24} />
+              </a>
+              <span className="text-sm text-muted-foreground">@aniram_13mir</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <a href="https://t.me/Marusja_nik67" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+                <Icon name="MessageCircle" size={24} />
+              </a>
+              <span className="text-sm text-muted-foreground">@Marusja_nik67</span>
+            </div>
           </div>
         </div>
       </section>
