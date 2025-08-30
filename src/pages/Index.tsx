@@ -35,22 +35,22 @@ export default function Index() {
     {
       title: "AI Промпт для E-commerce",
       category: "Промптинженеринг",
-      image: "/img/7812978e-fe20-426e-aa93-989cd6855bbb.jpg"
+      image: "/img/e58ba159-6183-4130-bd74-d5e30f145a72.jpg"
     },
     {
       title: "Логотип TechStart",
       category: "Логотип",
-      image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg"
+      image: "/img/e3488922-3d78-4a51-94d3-bc80e792b5a1.jpg"
     },
     {
       title: "Рекламный баннер",
       category: "Баннер",
-      image: "/img/52d0cdb1-d33f-40a4-8312-790040c3bf1f.jpg"
+      image: "/img/511ac964-44a6-45bd-9df4-8c1122a2be60.jpg"
     },
     {
       title: "Веб-дизайн интернет-магазина",
       category: "Веб-дизайн",
-      image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg"
+      image: "/img/c153b0bc-2571-4b1e-9ff6-b1e1c041072f.jpg"
     },
     {
       title: "Фирменный стиль",
@@ -64,15 +64,54 @@ export default function Index() {
     }
   ];
 
+  const galleryWorks = [
+    {
+      title: "Веб-дизайн корпоративного сайта",
+      category: "Веб-дизайн",
+      image: "/img/c153b0bc-2571-4b1e-9ff6-b1e1c041072f.jpg",
+      description: "Современный дизайн корпоративного сайта с акцентом на пользовательский опыт"
+    },
+    {
+      title: "Коллекция логотипов",
+      category: "Логотипы",
+      image: "/img/e3488922-3d78-4a51-94d3-bc80e792b5a1.jpg",
+      description: "Минималистичные логотипы для различных сфер бизнеса"
+    },
+    {
+      title: "ИИ-промпты для бизнеса",
+      category: "Промптинженеринг",
+      image: "/img/e58ba159-6183-4130-bd74-d5e30f145a72.jpg",
+      description: "Настройка ChatGPT и других ИИ-инструментов для автоматизации бизнес-процессов"
+    },
+    {
+      title: "Баннеры для соцсетей",
+      category: "SMM",
+      image: "/img/511ac964-44a6-45bd-9df4-8c1122a2be60.jpg",
+      description: "Креативные баннеры для продвижения в социальных сетях"
+    },
+    {
+      title: "Фирменный стиль стартапа",
+      category: "Брендинг",
+      image: "/img/73209857-d7d0-41b0-8ea1-ceea54845abb.jpg",
+      description: "Полный фирменный стиль для технологического стартапа"
+    },
+    {
+      title: "Авторские иллюстрации",
+      category: "Иллюстрация",
+      image: "/img/7a40dfd5-d627-4618-975d-c43f6da101ac.jpg",
+      description: "Уникальные иллюстрации для веб-проектов и печатной продукции"
+    }
+  ];
+
   const reviews = [
     {
-      name: "@aniram_13mir",
+      name: "Анна Романова",
       role: "Клиент",
       text: "Марина создала отличные промпты для нашего ИИ-ассистента. Качество ответов улучшилось в разы!",
       rating: 5
     },
     {
-      name: "@Marusja_nik67",
+      name: "Мария Никитина",
       role: "Заказчик",
       text: "Профессиональный подход к созданию контента. Тексты получились живыми и продающими!",
       rating: 5
@@ -113,6 +152,7 @@ export default function Index() {
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Портфолио</a>
+              <a href="#gallery" className="text-foreground hover:text-primary transition-colors">Галерея</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">О себе</a>
               <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
               <a href="#reviews" className="text-foreground hover:text-primary transition-colors">Отзывы</a>
@@ -169,6 +209,34 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-4 bg-gradient-to-br from-slate-50/50 via-gray-50/30 to-zinc-50/40">
+        <div className="container mx-auto max-w-7xl">
+          <h3 className="text-4xl font-bold font-heading text-center mb-16">Галерея работ</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {galleryWorks.map((work, index) => (
+              <Card key={index} className="group overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-3 border-0 bg-white/70 backdrop-blur-sm">
+                <div className="aspect-[4/3] overflow-hidden relative">
+                  <img 
+                    src={work.image} 
+                    alt={work.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <p className="text-sm font-body leading-tight">{work.description}</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <Badge variant="secondary" className="mb-3 bg-primary/10 text-primary border-primary/20">{work.category}</Badge>
+                  <h4 className="text-xl font-semibold font-heading text-gray-800 group-hover:text-primary transition-colors duration-300">{work.title}</h4>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -193,7 +261,7 @@ export default function Index() {
               <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
                 <img 
                   src="https://cdn.poehali.dev/files/e3537739-252d-4395-b80a-9bd963fff364.jpg" 
-                  alt="Юра - Фрилансер Дизайнер" 
+                  alt="Марина Лактионова - Фрилансер Дизайнер" 
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
