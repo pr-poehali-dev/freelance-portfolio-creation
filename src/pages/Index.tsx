@@ -282,6 +282,24 @@ export default function Index() {
               </a>
               <span className="text-sm text-muted-foreground">@Marusja_nik67</span>
             </div>
+            <div className="flex flex-col items-center">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+                <Icon name="MessageCircle" size={24} />
+              </a>
+              <span className="text-sm text-muted-foreground">ВК</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+                <Icon name="Users" size={24} />
+              </a>
+              <span className="text-sm text-muted-foreground">ОК</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
+                <Icon name="AtSign" size={24} />
+              </a>
+              <span className="text-sm text-muted-foreground">Max</span>
+            </div>
           </div>
         </div>
       </section>
