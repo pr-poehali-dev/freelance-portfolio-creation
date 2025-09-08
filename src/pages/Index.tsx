@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import LogoModal from '@/components/LogoModal';
 
 
 export default function Index() {
+  const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
   const services = [
     {
       icon: "Zap",
@@ -266,6 +269,16 @@ export default function Index() {
                 <CardContent className="p-6">
                   <Badge variant="secondary" className="mb-3 bg-primary/10 text-primary border-primary/20">{work.category}</Badge>
                   <h4 className="text-xl font-semibold font-heading text-gray-800 group-hover:text-primary transition-colors duration-300">{work.title}</h4>
+                  {work.title === "Коллекция логотипов" && (
+                    <Button 
+                      size="sm" 
+                      className="mt-3 w-full"
+                      onClick={() => setIsLogoModalOpen(true)}
+                    >
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Посмотреть логотипы
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -385,6 +398,12 @@ export default function Index() {
           </p>
         </div>
       </footer>
+
+      {/* Logo Modal */}
+      <LogoModal 
+        isOpen={isLogoModalOpen} 
+        onClose={() => setIsLogoModalOpen(false)} 
+      />
     </div>
   );
 }
