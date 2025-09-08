@@ -4,10 +4,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import LogoModal from '@/components/LogoModal';
+import BannerModal from '@/components/BannerModal';
+import IllustrationModal from '@/components/IllustrationModal';
 
 
 export default function Index() {
   const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
+  const [isBannerModalOpen, setIsBannerModalOpen] = useState(false);
+  const [isIllustrationModalOpen, setIsIllustrationModalOpen] = useState(false);
   const services = [
     {
       icon: "Zap",
@@ -279,6 +283,26 @@ export default function Index() {
                       Посмотреть логотипы
                     </Button>
                   )}
+                  {work.title === "Баннеры для соцсетей" && (
+                    <Button 
+                      size="sm" 
+                      className="mt-3 w-full"
+                      onClick={() => setIsBannerModalOpen(true)}
+                    >
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Посмотреть баннеры
+                    </Button>
+                  )}
+                  {work.title === "Авторские иллюстрации" && (
+                    <Button 
+                      size="sm" 
+                      className="mt-3 w-full"
+                      onClick={() => setIsIllustrationModalOpen(true)}
+                    >
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Посмотреть иллюстрации
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -399,10 +423,20 @@ export default function Index() {
         </div>
       </footer>
 
-      {/* Logo Modal */}
+      {/* Modals */}
       <LogoModal 
         isOpen={isLogoModalOpen} 
         onClose={() => setIsLogoModalOpen(false)} 
+      />
+      
+      <BannerModal 
+        isOpen={isBannerModalOpen} 
+        onClose={() => setIsBannerModalOpen(false)} 
+      />
+      
+      <IllustrationModal 
+        isOpen={isIllustrationModalOpen} 
+        onClose={() => setIsIllustrationModalOpen(false)} 
       />
     </div>
   );
