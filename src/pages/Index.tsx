@@ -6,12 +6,16 @@ import Icon from "@/components/ui/icon";
 import LogoModal from '@/components/LogoModal';
 import BannerModal from '@/components/BannerModal';
 import IllustrationModal from '@/components/IllustrationModal';
+import BrandingModal from '@/components/BrandingModal';
+import PromptModal from '@/components/PromptModal';
 
 
 export default function Index() {
   const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
   const [isBannerModalOpen, setIsBannerModalOpen] = useState(false);
   const [isIllustrationModalOpen, setIsIllustrationModalOpen] = useState(false);
+  const [isBrandingModalOpen, setIsBrandingModalOpen] = useState(false);
+  const [isPromptModalOpen, setIsPromptModalOpen] = useState(false);
   const services = [
     {
       icon: "Zap",
@@ -303,6 +307,26 @@ export default function Index() {
                       Посмотреть иллюстрации
                     </Button>
                   )}
+                  {work.title === "Фирменный стиль стартапа" && (
+                    <Button 
+                      size="sm" 
+                      className="mt-3 w-full"
+                      onClick={() => setIsBrandingModalOpen(true)}
+                    >
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Брендинг проекты
+                    </Button>
+                  )}
+                  {work.title === "ИИ-промпты для бизнеса" && (
+                    <Button 
+                      size="sm" 
+                      className="mt-3 w-full"
+                      onClick={() => setIsPromptModalOpen(true)}
+                    >
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Библиотека промптов
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -437,6 +461,16 @@ export default function Index() {
       <IllustrationModal 
         isOpen={isIllustrationModalOpen} 
         onClose={() => setIsIllustrationModalOpen(false)} 
+      />
+      
+      <BrandingModal 
+        isOpen={isBrandingModalOpen} 
+        onClose={() => setIsBrandingModalOpen(false)} 
+      />
+      
+      <PromptModal 
+        isOpen={isPromptModalOpen} 
+        onClose={() => setIsPromptModalOpen(false)} 
       />
     </div>
   );
