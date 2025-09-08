@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
-import LogoGallery from '@/components/LogoGallery';
+
 
 export default function Index() {
   const services = [
@@ -155,8 +155,8 @@ export default function Index() {
               <a href="#about" className="text-foreground hover:text-primary transition-colors">О себе</a>
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Портфолио</a>
               <a href="#gallery" className="text-foreground hover:text-primary transition-colors">Галерея</a>
-              <a href="#logos" className="text-foreground hover:text-primary transition-colors">Логотипы</a>
-              <a href="#logos" className="text-foreground hover:text-primary transition-colors">Логотипы</a>
+
+
               <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
               <a href="#reviews" className="text-foreground hover:text-primary transition-colors">Отзывы</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
@@ -294,13 +294,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Logo Collection Section */}
-      <section id="logos" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <h3 className="text-4xl font-bold font-heading text-center mb-16">Коллекция логотипов</h3>
-          <LogoGallery />
-        </div>
-      </section>
+
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 px-4 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30">
