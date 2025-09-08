@@ -5,8 +5,43 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
 const logos = [
+  // Первая серия логотипов
   {
     id: 1,
+    title: "Creative Studio",
+    category: "Креатив",
+    image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg",
+    description: "Современный логотип для креативной студии",
+    colors: ["Фиолетовый", "Розовый"]
+  },
+  {
+    id: 2,
+    title: "Fashion Boutique",
+    category: "Мода",
+    image: "/img/22341331-6929-401e-a269-74e55a7f915e.jpg",
+    description: "Элегантный логотип для модного бутика",
+    colors: ["Золотой", "Черный"]
+  },
+  {
+    id: 3,
+    title: "Digital Agency",
+    category: "IT",
+    image: "/img/38b8474d-e465-4d3a-b595-15ff2699d691.jpg",
+    description: "Технологичный логотип для диджитал агентства",
+    colors: ["Синий", "Белый"]
+  },
+  {
+    id: 4,
+    title: "Organic Market",
+    category: "Еда",
+    image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg",
+    description: "Натуральный логотип для органического рынка",
+    colors: ["Зеленый", "Коричневый"]
+  },
+  
+  // Вторая серия логотипов
+  {
+    id: 5,
     title: "TechStartup Logo",
     category: "Технологии",
     image: "/img/28613a00-cfe4-453a-a387-3ef5f9ce8357.jpg",
@@ -14,7 +49,7 @@ const logos = [
     colors: ["Синий", "Черный"]
   },
   {
-    id: 2,
+    id: 6,
     title: "Luxury Brand",
     category: "Мода",
     image: "/img/bd21e2fb-1cc4-4f76-86dc-f7961efd1704.jpg",
@@ -22,7 +57,7 @@ const logos = [
     colors: ["Золотой", "Черный"]
   },
   {
-    id: 3,
+    id: 7,
     title: "Organic Food Co",
     category: "Еда",
     image: "/img/a160b94a-9c2f-4cdc-b0fa-86d449ef4f91.jpg",
@@ -30,7 +65,7 @@ const logos = [
     colors: ["Зеленый", "Натуральный"]
   },
   {
-    id: 4,
+    id: 8,
     title: "Power Gym",
     category: "Фитнес",
     image: "/img/3e823b76-f01b-4102-919f-766678dd412a.jpg",
@@ -38,7 +73,7 @@ const logos = [
     colors: ["Красный", "Черный"]
   },
   {
-    id: 5,
+    id: 9,
     title: "Kids Learning App",
     category: "Образование",
     image: "/img/6ba47cf5-6736-4a9c-bf2f-b26362f5a253.jpg",
@@ -46,12 +81,30 @@ const logos = [
     colors: ["Радуга"]
   },
   {
-    id: 6,
+    id: 10,
     title: "Medical Clinic",
     category: "Медицина",
     image: "/img/3388f408-6a9f-42bf-b0aa-0c240b06950f.jpg",
     description: "Профессиональный логотип для медицинской клиники",
     colors: ["Синий", "Белый"]
+  },
+  
+  // Дополнительные логотипы из галереи
+  {
+    id: 11,
+    title: "Wellness Center",
+    category: "Здоровье",
+    image: "/img/52d0cdb1-d33f-40a4-8312-790040c3bf1f.jpg",
+    description: "Гармоничный логотип для центра здоровья",
+    colors: ["Зеленый", "Белый"]
+  },
+  {
+    id: 12,
+    title: "Art Gallery",
+    category: "Искусство",
+    image: "/img/5639f9e8-313a-419b-abdd-070b0c7948d3.jpg",
+    description: "Утонченный логотип для художественной галереи",
+    colors: ["Черный", "Золотой"]
   }
 ];
 
