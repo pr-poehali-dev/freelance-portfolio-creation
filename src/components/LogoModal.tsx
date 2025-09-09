@@ -5,106 +5,127 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
 const logos = [
-  // Первая серия логотипов
+  // Начальный уровень: простые логотипы
   {
     id: 1,
-    title: "Креативная Студия",
-    category: "Креатив",
+    title: "Простой логотип по шаблону",
+    category: "Эконом",
     image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg",
-    description: "Современный логотип для креативной студии",
-    colors: ["Фиолетовый", "Розовый"]
+    description: "Готовый шаблон с небольшой адаптацией под ваш бренд",
+    colors: ["На выбор"],
+    price: "от 300₽",
+    level: "Базовый"
   },
   {
     id: 2,
-    title: "Модный Бутик",
-    category: "Мода",
+    title: "Логотип по эскизу",
+    category: "Стандарт",
     image: "/img/22341331-6929-401e-a269-74e55a7f915e.jpg",
-    description: "Элегантный логотип для модного бутика",
-    colors: ["Золотой", "Черный"]
+    description: "Отрисовка простого логотипа по вашему эскизу",
+    colors: ["По макету"],
+    price: "от 1000₽",
+    level: "Стандарт"
   },
   {
     id: 3,
-    title: "Цифровое Агентство",
-    category: "IT",
+    title: "Логотип с вариантами",
+    category: "Профи",
     image: "/img/38b8474d-e465-4d3a-b595-15ff2699d691.jpg",
-    description: "Технологичный логотип для диджитал агентства",
-    colors: ["Синий", "Белый"]
+    description: "Несколько вариантов от опытного дизайнера с доработками",
+    colors: ["Синий", "Серый"],
+    price: "от 5000₽",
+    level: "Профессионал"
   },
   {
     id: 4,
-    title: "Органический Рынок",
-    category: "Еда",
+    title: "Концептуальный логотип",
+    category: "Премиум",
     image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg",
-    description: "Натуральный логотип для органического рынка",
-    colors: ["Зеленый", "Коричневый"]
+    description: "Авторская идея с глубокой проработкой концепции",
+    colors: ["По концепции"],
+    price: "от 10000₽",
+    level: "Премиум"
   },
-  
-  // Вторая серия логотипов
   {
     id: 5,
-    title: "Логотип Тех-Стартапа",
-    category: "Технологии",
+    title: "Логотип с исследованием",
+    category: "Бизнес",
     image: "/img/28613a00-cfe4-453a-a387-3ef5f9ce8357.jpg",
-    description: "Минималистичный логотип для технологического стартапа",
-    colors: ["Синий", "Черный"]
+    description: "Полный анализ рынка, ЦА и разработка уникальной концепции",
+    colors: ["Научно обоснованные"],
+    price: "от 20000₽",
+    level: "Бизнес"
   },
   {
     id: 6,
-    title: "Премиум Бренд",
-    category: "Мода",
+    title: "Корпоративная айдентика",
+    category: "Корпоративный",
     image: "/img/bd21e2fb-1cc4-4f76-86dc-f7961efd1704.jpg",
-    description: "Элегантный логотип для люксового бренда",
-    colors: ["Золотой", "Черный"]
+    description: "Команда специалистов: менеджер, маркетолог, арт-директор, дизайнеры",
+    colors: ["Полная палитра"],
+    price: "от 50000₽",
+    level: "Корпоративный"
   },
+  // Дополнительные примеры разных категорий
   {
     id: 7,
-    title: "Органические Продукты",
-    category: "Еда",
+    title: "Эко-бренд",
+    category: "Стандарт",
     image: "/img/a160b94a-9c2f-4cdc-b0fa-86d449ef4f91.jpg",
-    description: "Эко-дружелюбный логотип для органических продуктов",
-    colors: ["Зеленый", "Натуральный"]
+    description: "Натуральный логотип с отрисовкой по вашим пожеланиям",
+    colors: ["Зеленый", "Коричневый"],
+    price: "от 2500₽",
+    level: "Стандарт"
   },
   {
     id: 8,
-    title: "Пауэр Спортзал",
-    category: "Фитнес",
+    title: "Спортивный бренд",
+    category: "Профи",
     image: "/img/3e823b76-f01b-4102-919f-766678dd412a.jpg",
-    description: "Энергичный логотип для спортивного зала",
-    colors: ["Красный", "Черный"]
+    description: "Энергичный логотип с несколькими вариантами исполнения",
+    colors: ["Красный", "Черный"],
+    price: "от 7500₽",
+    level: "Профессионал"
   },
   {
     id: 9,
-    title: "Детское Обучающее Приложение",
-    category: "Образование",
+    title: "Детский бренд",
+    category: "Премиум",
     image: "/img/6ba47cf5-6736-4a9c-bf2f-b26362f5a253.jpg",
-    description: "Яркий логотип для детского приложения",
-    colors: ["Радуга"]
+    description: "Авторская идея с психологией детского восприятия",
+    colors: ["Яркие", "Дружелюбные"],
+    price: "от 15000₽",
+    level: "Премиум"
   },
   {
     id: 10,
-    title: "Медицинская Клиника",
-    category: "Медицина",
+    title: "Медицинский бренд",
+    category: "Бизнес",
     image: "/img/3388f408-6a9f-42bf-b0aa-0c240b06950f.jpg",
-    description: "Профессиональный логотип для медицинской клиники",
-    colors: ["Синий", "Белый"]
+    description: "Логотип с анализом медицинского рынка и требований",
+    colors: ["Синий", "Белый"],
+    price: "от 35000₽",
+    level: "Бизнес"
   },
-  
-  // Дополнительные логотипы из галереи
   {
     id: 11,
-    title: "Центр Красоты и Здоровья",
-    category: "Здоровье",
+    title: "Wellness-центр",
+    category: "Корпоративный",
     image: "/img/52d0cdb1-d33f-40a4-8312-790040c3bf1f.jpg",
-    description: "Гармоничный логотип для центра здоровья",
-    colors: ["Зеленый", "Белый"]
+    description: "Полная айдентика с брендбуком и гайдлайнами",
+    colors: ["Гармоничная палитра"],
+    price: "от 150000₽",
+    level: "Корпоративный"
   },
   {
     id: 12,
-    title: "Художественная Галерея",
-    category: "Искусство",
+    title: "Арт-проект",
+    category: "Эконом",
     image: "/img/5639f9e8-313a-419b-abdd-070b0c7948d3.jpg",
-    description: "Утонченный логотип для художественной галереи",
-    colors: ["Черный", "Золотой"]
+    description: "Стилизация готового элемента под художественный проект",
+    colors: ["Монохром"],
+    price: "от 800₽",
+    level: "Базовый"
   }
 ];
 
@@ -172,11 +193,24 @@ export default function LogoModal({ isOpen, onClose }: LogoModalProps) {
                   <p className="text-muted-foreground text-xs mb-3 font-body">
                     {logo.description}
                   </p>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Palette" size={12} className="text-primary" />
-                    <span className="text-xs text-muted-foreground">
-                      {logo.colors.join(", ")}
-                    </span>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Icon name="Palette" size={12} className="text-primary" />
+                      <span className="text-xs text-muted-foreground">
+                        {logo.colors.join(", ")}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between pt-1">
+                      <div className="flex items-center gap-2">
+                        <Icon name="DollarSign" size={12} className="text-green-600" />
+                        <span className="text-xs font-semibold text-green-600">
+                          {logo.price}
+                        </span>
+                      </div>
+                      <Badge variant="outline" className="text-xs px-2 py-0">
+                        {logo.level}
+                      </Badge>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
