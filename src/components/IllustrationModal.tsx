@@ -7,57 +7,83 @@ import Icon from '@/components/ui/icon';
 const illustrations = [
   {
     id: 1,
-    title: "Авторская иллюстрация",
-    category: "Арт",
+    title: "Иллюстрации для книжной обложки",
+    category: "Книги",
     image: "/img/7a40dfd5-d627-4618-975d-c43f6da101ac.jpg",
-    description: "Уникальная художественная иллюстрация в современном стиле",
-    style: "Минимализм",
-    colors: ["Синий", "Оранжевый"]
+    description: "Профессиональная иллюстрация для обложки книги",
+    style: "Типографика",
+    colors: ["По жанру"],
+    price: "от 1500₽"
   },
   {
     id: 2,
-    title: "Иллюстрация для веб-сайта",
-    category: "Веб-дизайн",
+    title: "Рисование комиксов",
+    category: "Комиксы",
     image: "/img/711e4b97-e673-4554-b714-14511eef8fa0.jpg",
-    description: "Векторная иллюстрация для главной страницы сайта",
-    style: "Флэт дизайн",
-    colors: ["Зеленый", "Белый"]
+    description: "Креативные комиксы в любом стиле и формате",
+    style: "Мультяшный",
+    colors: ["Яркие", "Насыщенные"],
+    price: "от 3000₽"
   },
   {
     id: 3,
-    title: "Иллюстрация для блога",
-    category: "Контент",
+    title: "Раскадровка",
+    category: "Препродакшн",
     image: "/img/22341331-6929-401e-a269-74e55a7f915e.jpg",
-    description: "Креативная иллюстрация для статей и блог-постов",
-    style: "Изометрия",
-    colors: ["Фиолетовый", "Желтый"]
+    description: "Детальная раскадровка для рекламы и мультфильмов",
+    style: "Скетч",
+    colors: ["Монохром", "Цветной"],
+    price: "от 2200₽"
   },
   {
     id: 4,
-    title: "Персонажи для игры",
-    category: "Разработка игр",
+    title: "Скрайбинг",
+    category: "Обучение",
     image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg",
-    description: "Дизайн персонажей для мобильной игры",
-    style: "Мультяшный",
-    colors: ["Яркие цвета"]
+    description: "Обучающие рисованные презентации и объяснительные видео",
+    style: "Минимализм",
+    colors: ["Монохром", "Яркие акценты"],
+    price: "от 2040₽"
   },
   {
     id: 5,
-    title: "Инфографика",
-    category: "Данные",
+    title: "Раскадровка видео",
+    category: "Видеопродакшн",
     image: "/img/38b8474d-e465-4d3a-b595-15ff2699d691.jpg",
-    description: "Наглядная визуализация данных и статистики",
-    style: "Информационный",
-    colors: ["Синий", "Серый"]
+    description: "Покадровая визуализация сюжета для видеороликов",
+    style: "Схематичный",
+    colors: ["Черно-белые", "Цветные"],
+    price: "от 1700₽"
   },
   {
     id: 6,
-    title: "Иллюстрация для упаковки",
-    category: "Упаковка",
+    title: "Векторные иллюстрации",
+    category: "Векторная графика",
     image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg",
-    description: "Привлекательная иллюстрация для упаковки товара",
-    style: "Реализм",
-    colors: ["Натуральные"]
+    description: "Масштабируемая векторная графика высокого качества",
+    style: "Плоский дизайн",
+    colors: ["Любая палитра"],
+    price: "от 1500₽"
+  },
+  {
+    id: 7,
+    title: "Fashion-иллюстрации",
+    category: "Модная иллюстрация",
+    image: "/img/7a40dfd5-d627-4618-975d-c43f6da101ac.jpg",
+    description: "Стильная фэшн-иллюстрация для модных брендов",
+    style: "Элегантный",
+    colors: ["Пастельные", "Контрастные"],
+    price: "от 2000₽"
+  },
+  {
+    id: 8,
+    title: "Иллюстрации к детским книгам",
+    category: "Детские книги",
+    image: "/img/711e4b97-e673-4554-b714-14511eef8fa0.jpg",
+    description: "Колоритные иллюстрации для детской литературы",
+    style: "Сказочный",
+    colors: ["Яркие", "Добрые", "Дружелюбные"],
+    price: "от 2500₽"
   }
 ];
 
@@ -136,6 +162,12 @@ export default function IllustrationModal({ isOpen, onClose }: IllustrationModal
                       <Icon name="Palette" size={12} className="text-primary" />
                       <span className="text-xs text-muted-foreground">
                         {illustration.colors.join(", ")}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 pt-1">
+                      <Icon name="DollarSign" size={12} className="text-green-600" />
+                      <span className="text-xs font-semibold text-green-600">
+                        {illustration.price}
                       </span>
                     </div>
                   </div>
