@@ -7,57 +7,113 @@ import Icon from '@/components/ui/icon';
 const banners = [
   {
     id: 1,
-    title: "Рекламный баннер для Instagram",
+    title: "Баннер для ВК",
     category: "Социальные сети",
     image: "/img/511ac964-44a6-45bd-9df4-8c1122a2be60.jpg",
-    description: "Яркий баннер для продвижения товаров в Instagram",
-    size: "1080x1080",
-    colors: ["Оранжевый", "Белый"]
+    description: "Стильный баннер для сообщества ВКонтакте",
+    size: "1590x400",
+    colors: ["Синий", "Белый"],
+    price: "от 520₽"
   },
   {
     id: 2,
-    title: "Баннер для интернет-магазина",
-    category: "Интернет-торговля",
+    title: "Анимированный баннер",
+    category: "Анимация",
     image: "/img/9c438725-074f-4698-8641-34366ccba25c.jpg",
-    description: "Продающий баннер для главной страницы магазина",
+    description: "Динамичный анимированный баннер для привлечения внимания",
     size: "1200x400",
-    colors: ["Синий", "Желтый"]
+    colors: ["Многоцветный"],
+    price: "от 1000₽"
   },
   {
     id: 3,
-    title: "YouTube превью",
+    title: "Баннер для YouTube",
     category: "Видео",
     image: "/img/f456d7d9-2fe1-429c-9bd1-7ff28ccd54ff.jpg",
-    description: "Привлекающее превью для видео на YouTube",
-    size: "1280x720",
-    colors: ["Красный", "Белый"]
+    description: "Привлекающий баннер-превью для YouTube канала",
+    size: "2560x1440",
+    colors: ["Красный", "Белый"],
+    price: "от 900₽"
   },
   {
     id: 4,
-    title: "Баннер для email-рассылки",
-    category: "Электронная почта",
+    title: "Баннер для рассылки",
+    category: "Email-маркетинг",
     image: "/img/d3a1f6a5-92ee-491f-8d97-0516ec781953.jpg",
-    description: "Профессиональный баннер для email-кампании",
+    description: "Профессиональный баннер для email-кампаний",
     size: "600x400",
-    colors: ["Зеленый", "Белый"]
+    colors: ["Зеленый", "Белый"],
+    price: "от 1000₽"
   },
   {
     id: 5,
-    title: "Рекламный баннер для сайта",
+    title: "Баннер для форума",
     category: "Веб-реклама",
     image: "/img/7812978e-fe20-426e-aa93-989cd6855bbb.jpg",
-    description: "Конверсионный баннер для размещения на сайтах",
+    description: "Информативный баннер для размещения на форумах",
     size: "728x90",
-    colors: ["Фиолетовый", "Белый"]
+    colors: ["Фиолетовый", "Белый"],
+    price: "от 1000₽"
   },
   {
     id: 6,
-    title: "Stories для Instagram",
+    title: "Баннер для соцсетей",
     category: "Социальные сети",
     image: "/img/f83c9943-9fd3-4310-b20b-83564f2ecf59.jpg",
-    description: "Стильные stories для продвижения в Instagram",
-    size: "1080x1920",
-    colors: ["Розовый", "Белый"]
+    description: "Универсальный баннер для всех социальных сетей",
+    size: "1200x630",
+    colors: ["Розовый", "Белый"],
+    price: "от 1000₽"
+  },
+  {
+    id: 7,
+    title: "Баннер для Авито",
+    category: "Маркетплейсы",
+    image: "/img/511ac964-44a6-45bd-9df4-8c1122a2be60.jpg",
+    description: "Продающий баннер для объявлений на Авито",
+    size: "1200x800",
+    colors: ["Оранжевый", "Белый"],
+    price: "от 1000₽"
+  },
+  {
+    id: 8,
+    title: "Баннер для Twitch",
+    category: "Стриминг",
+    image: "/img/9c438725-074f-4698-8641-34366ccba25c.jpg",
+    description: "Игровой баннер для стримингового канала Twitch",
+    size: "1920x480",
+    colors: ["Фиолетовый", "Неон"],
+    price: "от 580₽"
+  },
+  {
+    id: 9,
+    title: "Ресайз баннеров",
+    category: "Технические услуги",
+    image: "/img/f456d7d9-2fe1-429c-9bd1-7ff28ccd54ff.jpg",
+    description: "Адаптация баннеров под разные размеры и платформы",
+    size: "Любой",
+    colors: ["Сохранение оригинала"],
+    price: "от 840₽"
+  },
+  {
+    id: 10,
+    title: "Видеобаннер",
+    category: "Видео",
+    image: "/img/d3a1f6a5-92ee-491f-8d97-0516ec781953.jpg",
+    description: "Короткий видеобаннер для максимального вовлечения",
+    size: "1920x1080",
+    colors: ["Динамические"],
+    price: "от 600₽"
+  },
+  {
+    id: 11,
+    title: "Интерактивный баннер",
+    category: "Веб-технологии",
+    image: "/img/7812978e-fe20-426e-aa93-989cd6855bbb.jpg",
+    description: "Интерактивный HTML5 баннер с анимацией и кнопками",
+    size: "Адаптивный",
+    colors: ["По макету"],
+    price: "от 1000₽"
   }
 ];
 
@@ -136,6 +192,12 @@ export default function BannerModal({ isOpen, onClose }: BannerModalProps) {
                       <Icon name="Monitor" size={12} className="text-primary" />
                       <span className="text-xs text-muted-foreground">
                         {banner.size}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 pt-1">
+                      <Icon name="DollarSign" size={12} className="text-green-600" />
+                      <span className="text-xs font-semibold text-green-600">
+                        {banner.price}
                       </span>
                     </div>
                   </div>
