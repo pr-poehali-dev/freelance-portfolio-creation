@@ -35,7 +35,7 @@ const illustrations = [
   {
     id: 4,
     title: "Персонажи для игры",
-    category: "Геймдев",
+    category: "Разработка игр",
     image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg",
     description: "Дизайн персонажей для мобильной игры",
     style: "Мультяшный",

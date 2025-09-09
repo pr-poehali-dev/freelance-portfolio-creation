@@ -45,12 +45,12 @@ export default function Index() {
 
   const portfolio = [
     {
-      title: "AI Промпт для E-commerce",
+      title: "ИИ-Промпт для интернет-торговли",
       category: "Промптинженеринг",
       image: "/img/e58ba159-6183-4130-bd74-d5e30f145a72.jpg"
     },
     {
-      title: "Логотип TechStart",
+      title: "Логотип ТехСтарт",
       category: "Логотип",
       image: "/img/e3488922-3d78-4a51-94d3-bc80e792b5a1.jpg"
     },
@@ -160,7 +160,7 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold font-heading text-primary">Portfolio</h1>
+            <h1 className="text-2xl font-bold font-heading text-primary">Портфолио</h1>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">О себе</a>
@@ -432,7 +432,7 @@ export default function Index() {
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors mb-2">
                 <Icon name="AtSign" size={24} />
               </a>
-              <span className="text-sm text-muted-foreground">Max</span>
+              <span className="text-sm text-muted-foreground">Макс</span>
             </div>
           </div>
         </div>

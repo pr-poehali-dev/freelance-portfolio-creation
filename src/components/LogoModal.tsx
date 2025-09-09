@@ -8,7 +8,7 @@ const logos = [
   // Первая серия логотипов
   {
     id: 1,
-    title: "Creative Studio",
+    title: "Креативная Студия",
     category: "Креатив",
     image: "/img/0f046d48-e5bb-45fc-873f-4281e78e9643.jpg",
     description: "Современный логотип для креативной студии",
@@ -16,7 +16,7 @@ const logos = [
   },
   {
     id: 2,
-    title: "Fashion Boutique",
+    title: "Модный Бутик",
     category: "Мода",
     image: "/img/22341331-6929-401e-a269-74e55a7f915e.jpg",
     description: "Элегантный логотип для модного бутика",
@@ -24,7 +24,7 @@ const logos = [
   },
   {
     id: 3,
-    title: "Digital Agency",
+    title: "Цифровое Агентство",
     category: "IT",
     image: "/img/38b8474d-e465-4d3a-b595-15ff2699d691.jpg",
     description: "Технологичный логотип для диджитал агентства",
@@ -32,7 +32,7 @@ const logos = [
   },
   {
     id: 4,
-    title: "Organic Market",
+    title: "Органический Рынок",
     category: "Еда",
     image: "/img/48bea2f2-19d0-4d31-92d1-f05ca059e0c5.jpg",
     description: "Натуральный логотип для органического рынка",
@@ -42,7 +42,7 @@ const logos = [
   // Вторая серия логотипов
   {
     id: 5,
-    title: "TechStartup Logo",
+    title: "Логотип Тех-Стартапа",
     category: "Технологии",
     image: "/img/28613a00-cfe4-453a-a387-3ef5f9ce8357.jpg",
     description: "Минималистичный логотип для технологического стартапа",
@@ -50,7 +50,7 @@ const logos = [
   },
   {
     id: 6,
-    title: "Luxury Brand",
+    title: "Премиум Бренд",
     category: "Мода",
     image: "/img/bd21e2fb-1cc4-4f76-86dc-f7961efd1704.jpg",
     description: "Элегантный логотип для люксового бренда",
@@ -58,7 +58,7 @@ const logos = [
   },
   {
     id: 7,
-    title: "Organic Food Co",
+    title: "Органические Продукты",
     category: "Еда",
     image: "/img/a160b94a-9c2f-4cdc-b0fa-86d449ef4f91.jpg",
     description: "Эко-дружелюбный логотип для органических продуктов",
@@ -66,7 +66,7 @@ const logos = [
   },
   {
     id: 8,
-    title: "Power Gym",
+    title: "Пауэр Спортзал",
     category: "Фитнес",
     image: "/img/3e823b76-f01b-4102-919f-766678dd412a.jpg",
     description: "Энергичный логотип для спортивного зала",
@@ -74,7 +74,7 @@ const logos = [
   },
   {
     id: 9,
-    title: "Kids Learning App",
+    title: "Детское Обучающее Приложение",
     category: "Образование",
     image: "/img/6ba47cf5-6736-4a9c-bf2f-b26362f5a253.jpg",
     description: "Яркий логотип для детского приложения",
@@ -82,7 +82,7 @@ const logos = [
   },
   {
     id: 10,
-    title: "Medical Clinic",
+    title: "Медицинская Клиника",
     category: "Медицина",
     image: "/img/3388f408-6a9f-42bf-b0aa-0c240b06950f.jpg",
     description: "Профессиональный логотип для медицинской клиники",
@@ -92,7 +92,7 @@ const logos = [
   // Дополнительные логотипы из галереи
   {
     id: 11,
-    title: "Wellness Center",
+    title: "Центр Красоты и Здоровья",
     category: "Здоровье",
     image: "/img/52d0cdb1-d33f-40a4-8312-790040c3bf1f.jpg",
     description: "Гармоничный логотип для центра здоровья",
@@ -100,7 +100,7 @@ const logos = [
   },
   {
     id: 12,
-    title: "Art Gallery",
+    title: "Художественная Галерея",
     category: "Искусство",
     image: "/img/5639f9e8-313a-419b-abdd-070b0c7948d3.jpg",
     description: "Утонченный логотип для художественной галереи",

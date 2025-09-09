@@ -17,7 +17,7 @@ const banners = [
   {
     id: 2,
     title: "Баннер для интернет-магазина",
-    category: "E-commerce",
+    category: "Интернет-торговля",
     image: "/img/9c438725-074f-4698-8641-34366ccba25c.jpg",
     description: "Продающий баннер для главной страницы магазина",
     size: "1200x400",
@@ -26,7 +26,7 @@ const banners = [
   {
     id: 3,
     title: "YouTube превью",
-    category: "YouTube",
+    category: "Видео",
     image: "/img/f456d7d9-2fe1-429c-9bd1-7ff28ccd54ff.jpg",
     description: "Привлекающее превью для видео на YouTube",
     size: "1280x720",
@@ -35,7 +35,7 @@ const banners = [
   {
     id: 4,
     title: "Баннер для email-рассылки",
-    category: "Email",
+    category: "Электронная почта",
     image: "/img/d3a1f6a5-92ee-491f-8d97-0516ec781953.jpg",
     description: "Профессиональный баннер для email-кампании",
     size: "600x400",
