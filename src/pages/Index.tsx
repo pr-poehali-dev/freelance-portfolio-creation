@@ -206,17 +206,26 @@ export default function Index() {
             <div>
               <h3 className="text-4xl font-bold font-heading mb-6">О себе</h3>
               <p className="text-lg text-muted-foreground mb-6 font-body leading-relaxed">
-                Привет! Меня зовут Марина Лактионова, я фрилансер с опытом в области промптинженеринга, дизайна, написании текстов. 
-                Специализируюсь на создании уникальных визуальных решений и работе с ИИ-системами.
+                Привет! Меня зовут Марина Лактионова, я фрилансер-дизайнер и самозанятый. Специализируюсь на промптинженеринге, 
+                создании логотипов, баннеров, иллюстраций и комплексных дизайн-решений.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 font-body leading-relaxed">
-                Мой подход — сочетание креативности и технических знаний для достижения максимального результата для каждого клиента.
+              <p className="text-lg text-muted-foreground mb-4 font-body leading-relaxed">
+                Работаю с индивидуальными предпринимателями и небольшими компаниями, предлагая качественный дизайн 
+                по доступным ценам — в разы дешевле крупных брендинговых агентств.
               </p>
+              <div className="bg-blue-50 p-4 rounded-lg mb-6">
+                <h4 className="font-semibold text-primary mb-2">Сравнение с крупными агентствами:</h4>
+                <div className="text-sm text-muted-foreground space-y-1">
+                  <p>• <strong>Логотип:</strong> мои цены от 300₽, агентства — от 180 000₽</p>
+                  <p>• <strong>Брендбук:</strong> мои цены от 50 000₽, агентства — от 600 000₽</p>
+                  <p>• <strong>Упаковка:</strong> мои цены от 5000₽, агентства — от 850 000₽</p>
+                </div>
+              </div>
               <div className="flex flex-wrap gap-3">
-                <Badge variant="outline">AI/ML</Badge>
-                <Badge variant="outline">Графический дизайн</Badge>
-                <Badge variant="outline">Брендинг</Badge>
+                <Badge variant="outline">Самозанятый</Badge>
                 <Badge variant="outline">Промптинженеринг</Badge>
+                <Badge variant="outline">Графический дизайн</Badge>
+                <Badge variant="outline">Доступные цены</Badge>
               </div>
             </div>
             <div className="relative">
